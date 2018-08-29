@@ -52,6 +52,9 @@
       container: div,
       panorama: './assets/360images/rise_02.JPG'
       });
+      viewer.on('ready', function() {
+        viewer.startGyroscopeControl();
+      });
     </script>
   </body>
 </html>
