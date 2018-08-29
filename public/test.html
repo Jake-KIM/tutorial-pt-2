@@ -46,7 +46,10 @@
     var div = document.getElementById('photosphere');
     var viewer = new PhotoSphereViewer({
     container: div,
-    panorama: './assets/360images/rise_03.JPG'
+    panorama: './assets/360images/rise_03.JPG',
+    navbar: [
+       'zoom', 'download', 'gyroscope', 'stereo', 'fullscreen'
+    ]
     });
     viewer.on('ready', function() {
       viewer.startGyroscopeControl();
