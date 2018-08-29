@@ -45,12 +45,11 @@
     <title>Erm hey.</title>
   </head>
   <body>
-    <h1>TESTING!!!</h1>  
-
-    <div id="viewer"></div>
+    <div id="photosphere"></div>
     <script>
+      var div = document.getElementById('photosphere');
       var viewer = new PhotoSphereViewer({
-      container: 'viewer',
+      container: div,
       panorama: './assets/360images/rise_01.JPG'
       });
     </script>
