@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
+<script src="./js/node_modules/three/build/three.js"></script>
+<script src="./js/node_modules/d.js/lib/D.js"></script>
+<script src="./js/node_modules/uevent/uevent.js"></script>
+<script src="./js/node_modules/dot/doT.js"></script>
+<script src="./js/node_modules/nosleep.js/dist/NoSleep.js"></script>
+<script src="./js/node_modules/three/examples/js/renderers/CanvasRenderer.js"></script>
+<script src="./js/node_modules/three/examples/js/renderers/Projector.js"></script>
+<script src="./js/node_modules/three/examples/js/controls/DeviceOrientationControls.js"></script>
+<script src="./js/node_modules/three/examples/js/effects/StereoEffect.js"></script>
+<script src="./js/photo-sphere-viewer.js"></script>
+
   <head>
     <title>Erm hey.</title>
   </head>
   <body>
     <h1>TESTING!!!</h1>  
+
+    <div id="viewer"></div>
+      <script>
+        var viewer = new PhotoSphereViewer({
+        container: 'viewer',
+        panorama: './assets/360images/rise01'
+        });
+      </script>
+
   </body>
 </html>
