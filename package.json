@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/Jake-KIM/tutorial-pt-2#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "photo-sphere-viewer": "^3.4.0"
   },
   "devDependencies": {
     "pm2": "^3.0.4"
