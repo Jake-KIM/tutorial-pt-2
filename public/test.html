@@ -39,24 +39,20 @@
 <script src="./js/three/examples/js/controls/DeviceOrientationControls.js"></script>
 <script src="./js/three/examples/js/effects/StereoEffect.js"></script>
 <script src="./js/dist/photo-sphere-viewer.js"></script>
-
-  <head>
-    <link rel="stylesheet" href="./js/dist/photo-sphere-viewer.css">
-    <title>Erm hey.</title>
-  </head>
-  <body>
-    <div id="photosphere"></div>
-    <script>
-      var div = document.getElementById('photosphere');
-      var viewer = new PhotoSphereViewer({
-      container: div,
-      panorama: './assets/360images/rise_03.JPG'
-      });
-      viewer.on('ready', function() {
-        viewer.startGyroscopeControl();
-        viewer.toggleFullscreen();
-      });
-    </script>
+<body>
+  <link rel="stylesheet" href="./js/dist/photo-sphere-viewer.css">	
+  <div id="photosphere"></div>
+  <script>
+    var div = document.getElementById('photosphere');
+    var viewer = new PhotoSphereViewer({
+    container: div,
+    panorama: './assets/360images/rise_03.JPG'
+    });
+    viewer.on('ready', function() {
+      viewer.startGyroscopeControl();
+      viewer.toggleFullscreen();
+    });
+  </script>
   </body>
 </html>
 
