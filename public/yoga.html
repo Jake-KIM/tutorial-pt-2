@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    #photosphere {
+      width: 100%;
+      height: 100%;
+    }
+
+    .psv-button.custom-button {
+      font-size: 22px;
+      line-height: 20px;
+    }
+
+    .demo-label {
+      color: white;
+      font-size: 20px;
+      font-family: Helvetica, sans-serif;
+      text-align: center;
+      padding: 5px;
+      border: 1px solid white;
+      background: rgba(0,0,0,0.4);
+    }
+  </style>
+<script src="./js/three/build/three.js"></script>
+<script src="./js/d.js/lib/D.js"></script>
+<script src="./js/uevent/uevent.js"></script>
+<script src="./js/dot/doT.js"></script>
+<!--<script src="./js/nosleep.js/dist/NoSleep.js"></script>-->
+<script src="./js/three/examples/js/renderers/CanvasRenderer.js"></script>
+<script src="./js/three/examples/js/renderers/Projector.js"></script>
+<script src="./js/three/examples/js/controls/DeviceOrientationControls.js"></script>
+<script src="./js/three/examples/js/effects/StereoEffect.js"></script>
+<script src="./js/dist/photo-sphere-viewer.js"></script>
+<body>
+  <link rel="stylesheet" href="./js/dist/photo-sphere-viewer.css">	
+  <div id="photosphere"></div>
+  <script>
+    var div = document.getElementById('photosphere');
+    var viewer = new PhotoSphereViewer({
+    container: div,
+    panorama: './assets/360images/yoga_01.JPG',
+    navbar: [
+       'zoom', 'download', 'gyroscope', 'stereo', 'fullscreen'
+    ]
+    });
+    viewer.on('ready', function() {
+      viewer.startGyroscopeControl();
+    });
+  </script>
+  </body>
+</html>
+

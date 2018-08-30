@@ -411,3 +411,7 @@ h6,
 .scrollToTop_wraper {
   display: none;
 }
+#msg-box8-11 .mbr-section-title,
+#msg-box8-11 p {
+  color: #fff;
+}
